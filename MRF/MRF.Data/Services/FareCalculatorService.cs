@@ -1,4 +1,5 @@
 ﻿using MRF.Data.Repositories;
+using MRF.Models;
 
 namespace MRF.Data.Services
 {
@@ -11,7 +12,7 @@ namespace MRF.Data.Services
             _taxiRateRepository = taxiRateRepository;
         }
 
-        public decimal Calculate()
+        public decimal Calculate(TaxiRate taxiRate)
         {
             return 0;
         }

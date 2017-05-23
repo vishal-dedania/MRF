@@ -1,7 +1,9 @@
-﻿namespace MRF.Data.Services
+﻿using MRF.Models;
+
+namespace MRF.Data.Services
 {
     public interface IFareCalculatorService
     {
-        decimal Calculate();
+        decimal Calculate(TaxiRate taxRate);
     }
 }

@@ -28,9 +28,10 @@ namespace MRF.Web
                     Destination = t
                 }).ToArray();
 
+            
             foreach (var map in maps)
             {
-                Mapper.Map(map.Source, map.Destination);
+                Mapper.Initialize(cfg => cfg.CreateMap(map.Source, map.Destination).ReverseMap());
             }
         }
     }

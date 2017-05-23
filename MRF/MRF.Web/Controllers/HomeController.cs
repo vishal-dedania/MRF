@@ -3,7 +3,10 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
+using AutoMapper;
 using MRF.Data.Services;
+using MRF.Models;
+using MRF.Web.ViewModel;
 
 namespace MRF.Web.Controllers
 {
@@ -16,10 +19,15 @@ namespace MRF.Web.Controllers
             _fareCalculatorService = fareCalculatorService;
         }
 
-        public ActionResult Index()
+        public ActionResult Index(TaxiRateViewModel taxiRateViewModel)
         {
-            var test = _fareCalculatorService.Calculate();
+            var test = _fareCalculatorService.Calculate(Mapper.Map<TaxiRateViewModel, TaxiRate>(taxiRateViewModel));
             return View();
+        }
+
+        public ActionResult Calculate(TaxiRateViewModel taxiRateViewModel)
+        {   
+            return null;
         }
 
         public ActionResult About()

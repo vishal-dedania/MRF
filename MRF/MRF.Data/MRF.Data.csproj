@@ -54,6 +54,8 @@
     <Compile Include="Configuration\TaxiRateConfiguration.cs" />
     <Compile Include="DataContext.cs" />
     <Compile Include="DatabaseInitializer.cs" />
+    <Compile Include="GenericRepository.cs" />
+    <Compile Include="IRepository.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

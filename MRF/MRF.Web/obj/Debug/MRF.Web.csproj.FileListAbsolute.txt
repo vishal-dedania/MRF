@@ -51,3 +51,5 @@ C:\Users\vishal\Source\Repos\MRF\MRF\MRF.Web\bin\Ninject.Web.Common.xml
 C:\Users\vishal\Source\Repos\MRF\MRF\MRF.Web\bin\Ninject.Web.Mvc.xml
 C:\Users\vishal\Source\Repos\MRF\MRF\MRF.Web\bin\EntityFramework.xml
 C:\Users\vishal\Source\Repos\MRF\MRF\MRF.Web\bin\MRF.Models.pdb
+C:\Users\vishal\Source\Repos\MRF\MRF\MRF.Web\bin\AutoMapper.dll
+C:\Users\vishal\Source\Repos\MRF\MRF\MRF.Web\bin\AutoMapper.xml

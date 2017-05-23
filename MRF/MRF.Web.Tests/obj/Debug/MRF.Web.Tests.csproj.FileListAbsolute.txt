@@ -48,3 +48,5 @@ C:\Users\vishal\Source\Repos\MRF\MRF\MRF.Web.Tests\bin\Debug\Ninject.xml
 C:\Users\vishal\Source\Repos\MRF\MRF\MRF.Web.Tests\bin\Debug\MRF.Data.pdb
 C:\Users\vishal\Source\Repos\MRF\MRF\MRF.Web.Tests\bin\Debug\EntityFramework.xml
 C:\Users\vishal\Source\Repos\MRF\MRF\MRF.Web.Tests\bin\Debug\MRF.Models.pdb
+C:\Users\vishal\Source\Repos\MRF\MRF\MRF.Web.Tests\bin\Debug\AutoMapper.dll
+C:\Users\vishal\Source\Repos\MRF\MRF\MRF.Web.Tests\bin\Debug\AutoMapper.xml

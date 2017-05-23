@@ -38,3 +38,5 @@ C:\Users\vishal\Source\Repos\MRF\MRF\MRF.Web\bin\Newtonsoft.Json.xml
 C:\Users\vishal\Source\Repos\MRF\MRF\MRF.Web\obj\Debug\MRF.Web.csprojResolveAssemblyReference.cache
 C:\Users\vishal\Source\Repos\MRF\MRF\MRF.Web\obj\Debug\MRF.Web.dll
 C:\Users\vishal\Source\Repos\MRF\MRF\MRF.Web\obj\Debug\MRF.Web.pdb
+C:\Users\vishal\Source\Repos\MRF\MRF\MRF.Web\bin\Ninject.dll
+C:\Users\vishal\Source\Repos\MRF\MRF\MRF.Web\bin\Ninject.xml

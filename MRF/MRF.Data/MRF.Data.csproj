@@ -54,9 +54,11 @@
     <Compile Include="Configuration\TaxiRateConfiguration.cs" />
     <Compile Include="DataContext.cs" />
     <Compile Include="DatabaseInitializer.cs" />
-    <Compile Include="GenericRepository.cs" />
-    <Compile Include="IRepository.cs" />
+    <Compile Include="Repositories\GenericRepository.cs" />
+    <Compile Include="Repositories\IRepository.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Repositories\StateRepository.cs" />
+    <Compile Include="Repositories\TaxiRateRepository.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

@@ -3,7 +3,7 @@ using System.Data.Entity;
 using System.Data.Entity.Infrastructure;
 using System.Linq;
 
-namespace MRF.Data
+namespace MRF.Data.Repositories
 {
     public class GenericRepository<T> : IRepository<T> where T : class
     {

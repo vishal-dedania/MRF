@@ -1,6 +1,6 @@
 ﻿using System.Linq;
 
-namespace MRF.Data
+namespace MRF.Data.Repositories
 {
     public interface IRepository<T> where T : class
     {

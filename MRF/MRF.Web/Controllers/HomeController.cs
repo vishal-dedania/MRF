@@ -10,7 +10,7 @@ using MRF.Web.ViewModel;
 
 namespace MRF.Web.Controllers
 {
-    public class HomeController : Controller
+    public class HomeController : BaseController
     {
         private readonly IFareCalculatorService _fareCalculatorService;
 

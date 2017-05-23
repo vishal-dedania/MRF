@@ -3,7 +3,7 @@ using System.ComponentModel.DataAnnotations;
 
 namespace MRF.Models
 {
-    public class TaxiRate : IAuditInfo
+    public class TaxiRate : ITaxiRate, IAuditInfo
     {
         [Key]
         public long Id { get; set; }

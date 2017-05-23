@@ -3,3 +3,10 @@ C:\Users\vishal\Source\Repos\MRF\MRF\MRF.Data\bin\Debug\MRF.Data.pdb
 C:\Users\vishal\Source\Repos\MRF\MRF\MRF.Data\obj\Debug\MRF.Data.csprojResolveAssemblyReference.cache
 C:\Users\vishal\Source\Repos\MRF\MRF\MRF.Data\obj\Debug\MRF.Data.dll
 C:\Users\vishal\Source\Repos\MRF\MRF\MRF.Data\obj\Debug\MRF.Data.pdb
+C:\Users\vishal\Source\Repos\MRF\MRF\MRF.Data\bin\Debug\MRF.Data.dll.config
+C:\Users\vishal\Source\Repos\MRF\MRF\MRF.Data\bin\Debug\EntityFramework.dll
+C:\Users\vishal\Source\Repos\MRF\MRF\MRF.Data\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\vishal\Source\Repos\MRF\MRF\MRF.Data\bin\Debug\EntityFramework.xml
+C:\Users\vishal\Source\Repos\MRF\MRF\MRF.Data\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\vishal\Source\Repos\MRF\MRF\MRF.Data\bin\Debug\MRF.Models.dll
+C:\Users\vishal\Source\Repos\MRF\MRF\MRF.Data\bin\Debug\MRF.Models.pdb

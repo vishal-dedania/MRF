@@ -3,13 +3,22 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
+using MRF.Data.Services;
 
 namespace MRF.Web.Controllers
 {
     public class HomeController : Controller
     {
+        private readonly IFareCalculatorService _fareCalculatorService;
+
+        public HomeController(IFareCalculatorService fareCalculatorService)
+        {
+            _fareCalculatorService = fareCalculatorService;
+        }
+
         public ActionResult Index()
         {
+            var test = _fareCalculatorService.Calculate();
             return View();
         }
 

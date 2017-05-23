@@ -37,3 +37,14 @@ C:\Users\vishal\Source\Repos\MRF\MRF\MRF.Web.Tests\bin\Debug\System.Web.Optimiza
 C:\Users\vishal\Source\Repos\MRF\MRF\MRF.Web.Tests\obj\Debug\MRF.Web.Tests.csprojResolveAssemblyReference.cache
 C:\Users\vishal\Source\Repos\MRF\MRF\MRF.Web.Tests\obj\Debug\MRF.Web.Tests.dll
 C:\Users\vishal\Source\Repos\MRF\MRF\MRF.Web.Tests\obj\Debug\MRF.Web.Tests.pdb
+C:\Users\vishal\Source\Repos\MRF\MRF\MRF.Web.Tests\bin\Debug\WebActivatorEx.dll
+C:\Users\vishal\Source\Repos\MRF\MRF\MRF.Web.Tests\bin\Debug\Ninject.Web.Common.dll
+C:\Users\vishal\Source\Repos\MRF\MRF\MRF.Web.Tests\bin\Debug\Ninject.dll
+C:\Users\vishal\Source\Repos\MRF\MRF\MRF.Web.Tests\bin\Debug\MRF.Data.dll
+C:\Users\vishal\Source\Repos\MRF\MRF\MRF.Web.Tests\bin\Debug\EntityFramework.dll
+C:\Users\vishal\Source\Repos\MRF\MRF\MRF.Web.Tests\bin\Debug\MRF.Models.dll
+C:\Users\vishal\Source\Repos\MRF\MRF\MRF.Web.Tests\bin\Debug\Ninject.Web.Common.xml
+C:\Users\vishal\Source\Repos\MRF\MRF\MRF.Web.Tests\bin\Debug\Ninject.xml
+C:\Users\vishal\Source\Repos\MRF\MRF\MRF.Web.Tests\bin\Debug\MRF.Data.pdb
+C:\Users\vishal\Source\Repos\MRF\MRF\MRF.Web.Tests\bin\Debug\EntityFramework.xml
+C:\Users\vishal\Source\Repos\MRF\MRF\MRF.Web.Tests\bin\Debug\MRF.Models.pdb

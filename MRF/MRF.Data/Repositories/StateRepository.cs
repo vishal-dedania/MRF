@@ -5,7 +5,7 @@ namespace MRF.Data.Repositories
 {
     public class StateRepository : GenericRepository<State>
     {
-        public StateRepository(DbContext context) : base(context)
+        public StateRepository(DataContext context) : base(context)
         {
         }
     }

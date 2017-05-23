@@ -40,3 +40,14 @@ C:\Users\vishal\Source\Repos\MRF\MRF\MRF.Web\obj\Debug\MRF.Web.dll
 C:\Users\vishal\Source\Repos\MRF\MRF\MRF.Web\obj\Debug\MRF.Web.pdb
 C:\Users\vishal\Source\Repos\MRF\MRF\MRF.Web\bin\Ninject.dll
 C:\Users\vishal\Source\Repos\MRF\MRF\MRF.Web\bin\Ninject.xml
+C:\Users\vishal\Source\Repos\MRF\MRF\MRF.Web\bin\MRF.Data.dll
+C:\Users\vishal\Source\Repos\MRF\MRF\MRF.Web\bin\Ninject.Web.Common.dll
+C:\Users\vishal\Source\Repos\MRF\MRF\MRF.Web\bin\Ninject.Web.Mvc.dll
+C:\Users\vishal\Source\Repos\MRF\MRF\MRF.Web\bin\WebActivatorEx.dll
+C:\Users\vishal\Source\Repos\MRF\MRF\MRF.Web\bin\EntityFramework.dll
+C:\Users\vishal\Source\Repos\MRF\MRF\MRF.Web\bin\MRF.Models.dll
+C:\Users\vishal\Source\Repos\MRF\MRF\MRF.Web\bin\MRF.Data.pdb
+C:\Users\vishal\Source\Repos\MRF\MRF\MRF.Web\bin\Ninject.Web.Common.xml
+C:\Users\vishal\Source\Repos\MRF\MRF\MRF.Web\bin\Ninject.Web.Mvc.xml
+C:\Users\vishal\Source\Repos\MRF\MRF\MRF.Web\bin\EntityFramework.xml
+C:\Users\vishal\Source\Repos\MRF\MRF\MRF.Web\bin\MRF.Models.pdb

@@ -5,7 +5,7 @@ namespace MRF.Data.Repositories
 {
     public class TaxiRateRepository : GenericRepository<TaxiRate>
     {
-        public TaxiRateRepository(DbContext context) : base(context)
+        public TaxiRateRepository(DataContext context) : base(context)
         {
         }
     }

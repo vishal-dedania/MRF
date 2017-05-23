@@ -8,9 +8,9 @@ namespace MRF.Data.Repositories
     public class GenericRepository<T> : IRepository<T> where T : class
     {
         protected DbSet<T> DbSet { get; set; }
-        protected DbContext Context { get; set; }
+        protected DataContext Context { get; set; }
 
-        public GenericRepository(DbContext context)
+        public GenericRepository(DataContext context)
         {
             if (context == null)
             {

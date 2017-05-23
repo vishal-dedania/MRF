@@ -1,0 +1,5 @@
+C:\Users\vishal\Source\Repos\MRF\MRF\MRF.Models\bin\Debug\MRF.Models.dll
+C:\Users\vishal\Source\Repos\MRF\MRF\MRF.Models\bin\Debug\MRF.Models.pdb
+C:\Users\vishal\Source\Repos\MRF\MRF\MRF.Models\obj\Debug\MRF.Models.csprojResolveAssemblyReference.cache
+C:\Users\vishal\Source\Repos\MRF\MRF\MRF.Models\obj\Debug\MRF.Models.dll
+C:\Users\vishal\Source\Repos\MRF\MRF\MRF.Models\obj\Debug\MRF.Models.pdb

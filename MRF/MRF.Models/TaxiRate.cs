@@ -15,7 +15,7 @@ namespace MRF.Models
         public decimal InitialEntryFee { get; set; }
 
         [Required]
-        public decimal TaxSurcharge { get; set; }
+        public decimal StateTaxSurcharge { get; set; }
 
         [Required]
         public State StateId { get; set; }

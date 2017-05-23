@@ -11,6 +11,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MRF.Web", "MRF.Web\MRF.Web.
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MRF.Web.Tests", "MRF.Web.Tests\MRF.Web.Tests.csproj", "{16BA396D-B4A6-42D6-AC33-03AA5A9ADE67}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MRF.ConsoleApp", "MRF.ConsoleApp\MRF.ConsoleApp.csproj", "{6168FBC3-242E-4BBB-BFD6-94121C2221F1}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +35,10 @@ Global
 		{16BA396D-B4A6-42D6-AC33-03AA5A9ADE67}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{16BA396D-B4A6-42D6-AC33-03AA5A9ADE67}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{16BA396D-B4A6-42D6-AC33-03AA5A9ADE67}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6168FBC3-242E-4BBB-BFD6-94121C2221F1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6168FBC3-242E-4BBB-BFD6-94121C2221F1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6168FBC3-242E-4BBB-BFD6-94121C2221F1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6168FBC3-242E-4BBB-BFD6-94121C2221F1}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

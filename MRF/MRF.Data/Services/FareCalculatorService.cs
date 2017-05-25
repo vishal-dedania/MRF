@@ -6,9 +6,9 @@ namespace MRF.Data.Services
 {
     public class FareCalculatorService : IFareCalculatorService
     {
-        private readonly TaxiRateRepository _taxiRateRepository;
+        private readonly ITaxiRateRepository _taxiRateRepository;
 
-        public FareCalculatorService(TaxiRateRepository taxiRateRepository)
+        public FareCalculatorService(ITaxiRateRepository taxiRateRepository)
         {
             _taxiRateRepository = taxiRateRepository;
         }

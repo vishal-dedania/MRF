@@ -5,7 +5,7 @@ using MRF.Models;
 
 namespace MRF.Data.Repositories
 {
-    public class TaxiRateRepository : GenericRepository<TaxiRate>
+    public class TaxiRateRepository : GenericRepository<TaxiRate>, ITaxiRateRepository
     {
         private readonly DataContext _context;
         public TaxiRateRepository(DataContext context) : base(context)

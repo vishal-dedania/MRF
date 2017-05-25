@@ -78,7 +78,7 @@ namespace MRF.Web.App_Start
 
             #region Repositories
 
-            kernel.Bind<TaxiRateRepository>().To(typeof(TaxiRateRepository));
+            kernel.Bind<ITaxiRateRepository>().To(typeof(TaxiRateRepository));
 
             #endregion
         }

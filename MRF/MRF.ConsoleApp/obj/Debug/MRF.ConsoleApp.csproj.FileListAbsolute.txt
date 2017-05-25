@@ -1,8 +1,6 @@
 C:\Users\vishal\Source\Repos\MRF\MRF\MRF.ConsoleApp\bin\Debug\MRF.ConsoleApp.exe.config
 C:\Users\vishal\Source\Repos\MRF\MRF\MRF.ConsoleApp\bin\Debug\MRF.ConsoleApp.exe
 C:\Users\vishal\Source\Repos\MRF\MRF\MRF.ConsoleApp\bin\Debug\MRF.ConsoleApp.pdb
-C:\Users\vishal\Source\Repos\MRF\MRF\MRF.ConsoleApp\obj\Debug\MRF.ConsoleApp.exe
-C:\Users\vishal\Source\Repos\MRF\MRF\MRF.ConsoleApp\obj\Debug\MRF.ConsoleApp.pdb
 C:\Users\vishal\Source\Repos\MRF\MRF\MRF.ConsoleApp\bin\Debug\EntityFramework.dll
 C:\Users\vishal\Source\Repos\MRF\MRF\MRF.ConsoleApp\bin\Debug\EntityFramework.SqlServer.dll
 C:\Users\vishal\Source\Repos\MRF\MRF\MRF.ConsoleApp\bin\Debug\MRF.Data.dll
@@ -12,3 +10,5 @@ C:\Users\vishal\Source\Repos\MRF\MRF\MRF.ConsoleApp\bin\Debug\EntityFramework.xm
 C:\Users\vishal\Source\Repos\MRF\MRF\MRF.ConsoleApp\bin\Debug\EntityFramework.SqlServer.xml
 C:\Users\vishal\Source\Repos\MRF\MRF\MRF.ConsoleApp\bin\Debug\MRF.Models.pdb
 C:\Users\vishal\Source\Repos\MRF\MRF\MRF.ConsoleApp\obj\Debug\MRF.ConsoleApp.csprojResolveAssemblyReference.cache
+C:\Users\vishal\Source\Repos\MRF\MRF\MRF.ConsoleApp\obj\Debug\MRF.ConsoleApp.exe
+C:\Users\vishal\Source\Repos\MRF\MRF\MRF.ConsoleApp\obj\Debug\MRF.ConsoleApp.pdb

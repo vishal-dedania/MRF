@@ -4,14 +4,23 @@
     var controllerId = 'fareCalculatorController';
 
     angular.module('mrfApp').controller(controllerId,
-        ['$scope', '$http', 'alerts', fareCalculatorController]);
+        ['$scope', '$http', 'alerts', 'fareCalculatorConfig', 'model', fareCalculatorController]);
 
-    function fareCalculatorController($scope, $http, alerts) {
-        $scope.calculateFare = calculateTaxiFare;
+    function fareCalculatorController($scope, $http, alerts, fareCalculatorConfig, model) {
+        var vm = this;
+
+
+        model.startDateTime = new Date(model.startDateTime);
+        vm.ride = model;
+        
+        vm.calculateTaxiFare = calculateTaxiFare;
+
+        
+        //$scope.calculateFare = calculateTaxiFare;
 
         function calculateTaxiFare() {
 
-            $http.post("/Home/CalculateTaxiFare", $scope.issue)
+            $http.post(fareCalculatorConfig.postBackUrl, vm.ride)
                 .success(function(data) {
                     $scope.originalIssue = angular.extend({}, data);
 

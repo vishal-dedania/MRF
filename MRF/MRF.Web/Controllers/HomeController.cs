@@ -19,10 +19,17 @@ namespace MRF.Web.Controllers
             _fareCalculatorService = fareCalculatorService;
         }
 
-        public ActionResult Index(TaxiRateViewModel taxiRateViewModel)
+        public ActionResult Index()
         {
-            var test = _fareCalculatorService.Calculate(Mapper.Map<TaxiRateViewModel, TaxiRate>(taxiRateViewModel));
-            return View();
+            var model = new RideViewModel();
+            return View(model);
+        }
+
+        [HttpPost]
+        public ActionResult CalculateTaxiFare(RideViewModel taxiRateViewModel)
+        {
+            //var test = _fareCalculatorService.Calculate(Mapper.Map<TaxiRateViewModel, TaxiRate>(taxiRateViewModel));
+            return null;
         }
 
         public ActionResult Calculate(TaxiRateViewModel taxiRateViewModel)

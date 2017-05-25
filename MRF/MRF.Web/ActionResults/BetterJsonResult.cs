@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
+using MRF.Web.Utilities;
 using Newtonsoft.Json;
 using Newtonsoft.Json.Converters;
 using Newtonsoft.Json.Serialization;
@@ -52,11 +53,8 @@ namespace MRF.Web.ActionResults
         {
             if (ErrorMessages.Any())
             {
-                var originalData = Data;
                 Data = new
                 {
-                    Success = false,
-                    OriginalData = originalData,
                     ErrorMessage = string.Join("\n", ErrorMessages),
                     ErrorMessages = ErrorMessages.ToArray()
                 };
@@ -64,16 +62,9 @@ namespace MRF.Web.ActionResults
                 response.StatusCode = 400;
             }
 
-            var settings = new JsonSerializerSettings
-            {
-                ContractResolver = new CamelCasePropertyNamesContractResolver(),
-                Converters = new JsonConverter[]
-                {
-                    new StringEnumConverter(),
-                },
-            };
+            if (Data == null) return;
 
-            response.Write(JsonConvert.SerializeObject(Data, settings));
+            response.Write(Data.ToJson());
         }
     }
 

@@ -1,31 +1,65 @@
-﻿@{
-    ViewBag.Title = "Home Page";
+﻿@using Microsoft.Web.Mvc
+@using MRF.Web.Controllers
+@using MRF.Web.Helpers
+@model MRF.Web.ViewModel.RideViewModel 
+@{
+    ViewBag.Title = "MRF Page";
 }
+<h1 class="page-header">MRF Calculator</h1>
+<form novalidate
+      name="myForm"
+      ng-controller="fareCalculatorController as vm"
+      ng-submit="vm.calculateTaxiFare()"
+      style="max-width: 580px;">
+    <fieldset>
+        <div class="form-group has-feedback">
+            <label class="control-label" for="miles">Number of Miles when the taxicab is traveling at less than 6 miles an hour</label>
+            <input required ng-model="vm.ride.totalMilesGoingBelowSixMph"
+                   class="form-control" name="totalMilesGoingBelowSixMph" type="text" ng-min="1" number-validate>
+            
+            <div class="alert alert-danger" ng-show="myForm.totalMilesGoingBelowSixMph.$error.invalidNumber">
+                <strong>Error!</strong> Invalid number.
+            </div>
+        </div>
+        
+        <div class="form-group has-feedback">
+            <label class="control-label" for="minutes">Number of when not in motion or traveling at 6 miles per hour or more</label>
+            <input required ng-model="vm.ride.numberOfMinutesIdleOrGoingAboveSixMph"
+                   class="form-control" name="numberOfMinutesIdleOrGoingAboveSixMph" type="text" number-validate>
+            
+            <div class="alert alert-danger" ng-show="myForm.numberOfMinutesIdleOrGoingAboveSixMph.$error.invalidNumber">
+                <strong>Error!</strong> Invalid number.
+            </div>
+        </div>
+        
+        <div class="form-group has-feedback">
+            <label class="control-label" for="startDate">Start DateTime</label>
+            <input required ng-model="vm.ride.startDateTime"
+                   class="form-control" name="startDateTime" type="datetime-local">
+            
+            <div class="alert alert-danger" ng-show="myForm.startDateTime.$error.required">
+                <strong>Error!</strong> Fare start date/time is required.
+            </div>
+            <div class="alert alert-danger" ng-show="myForm.startDateTime.$error.datetimelocal">
+                <strong>Error!</strong> Not a valid date
+            </div>
+        </div>
+        
+        <div class="form-group">
+            <button class="btn btn-success btn-lg" ng-disabled="myForm.$invalid">Calculate</button>
+        </div>
+    </fieldset>
+</form>
 
-<div class="jumbotron">
-    <h1>ASP.NET</h1>
-    <p class="lead">ASP.NET is a free web framework for building great Web sites and Web applications using HTML, CSS and JavaScript.</p>
-    <p><a href="http://asp.net" class="btn btn-primary btn-lg">Learn more &raquo;</a></p>
-</div>
+@section Scripts
+{
+    <script>
+        var url = '@(Html.BuildUrlFromExpression<HomeController>(c => c.CalculateTaxiFare(null)))';
 
-<div class="row">
-    <div class="col-md-4">
-        <h2>Getting started</h2>
-        <p>
-            ASP.NET MVC gives you a powerful, patterns-based way to build dynamic websites that
-            enables a clean separation of concerns and gives you full control over markup
-            for enjoyable, agile development.
-        </p>
-        <p><a class="btn btn-default" href="http://go.microsoft.com/fwlink/?LinkId=301865">Learn more &raquo;</a></p>
-    </div>
-    <div class="col-md-4">
-        <h2>Get more libraries</h2>
-        <p>NuGet is a free Visual Studio extension that makes it easy to add, remove, and update libraries and tools in Visual Studio projects.</p>
-        <p><a class="btn btn-default" href="http://go.microsoft.com/fwlink/?LinkId=301866">Learn more &raquo;</a></p>
-    </div>
-    <div class="col-md-4">
-        <h2>Web Hosting</h2>
-        <p>You can easily find a web hosting company that offers the right mix of features and price for your applications.</p>
-        <p><a class="btn btn-default" href="http://go.microsoft.com/fwlink/?LinkId=301867">Learn more &raquo;</a></p>
-    </div>
-</div>
+        window.app.constant('fareCalculatorConfig', {
+            postBackUrl: url
+        });
+
+        window.app.constant('model', @Html.JsonFor(Model));
+    </script>
+}

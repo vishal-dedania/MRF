@@ -1,4 +1,5 @@
 using MRF.Data.Services;
+using MRF.Models;
 
 [assembly: WebActivatorEx.PreApplicationStartMethod(typeof(MRF.Web.App_Start.NinjectWebCommon), "Start")]
 [assembly: WebActivatorEx.ApplicationShutdownMethodAttribute(typeof(MRF.Web.App_Start.NinjectWebCommon), "Stop")]

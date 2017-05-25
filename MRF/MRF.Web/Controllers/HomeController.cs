@@ -22,7 +22,7 @@ namespace MRF.Web.Controllers
         public ActionResult Index()
         {
             var model = new RideViewModel();
-            return View(model);
+            return View("Index", model);
         }
 
         [HttpPost]

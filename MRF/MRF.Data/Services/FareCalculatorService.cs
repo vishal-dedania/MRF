@@ -6,19 +6,17 @@ namespace MRF.Data.Services
 {
     public class FareCalculatorService : IFareCalculatorService
     {
-        private TaxiRateRepository _taxiRateRepository;
-        private RideHistoryRepository _rideHistoryRepository;
+        private readonly TaxiRateRepository _taxiRateRepository;
 
-        public FareCalculatorService(TaxiRateRepository taxiRateRepository, RideHistoryRepository rideHistoryRepository)
+        public FareCalculatorService(TaxiRateRepository taxiRateRepository)
         {
             _taxiRateRepository = taxiRateRepository;
-            _rideHistoryRepository = rideHistoryRepository;
         }
 
         public decimal Calculate(RideHistory ride)
         {
             decimal totalPrice = 0;
-            var stateId = 2;
+            var stateId = 2; // NY TODO: Get value from UI
             var taxiRate = _taxiRateRepository.GetTaxiRateByStateId(stateId);
 
             var timedUnitVal = ride.NumberOfMinutesIdleOrGoingAboveSixMph / taxiRate.TimedUnitsPerMinute;

@@ -49,6 +49,10 @@
         <div class="form-group">
             <button class="btn btn-success btn-lg" ng-disabled="myForm.$invalid">Calculate</button>
         </div>
+        
+        <div class="form-group" ng-show="vm.ride.totalPrice">
+            <h1>Total Price : {{vm.ride.totalPrice | currency}}</h1>
+        </div>
     </fieldset>
 </form>
 

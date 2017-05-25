@@ -9,23 +9,21 @@
     function fareCalculatorController($scope, $http, alerts, fareCalculatorConfig, model) {
         var vm = this;
 
-
         model.startDateTime = new Date(model.startDateTime);
         vm.ride = model;
-
         vm.calculateTaxiFare = calculateTaxiFare;
 
-
-        //$scope.calculateFare = calculateTaxiFare;
-
         function calculateTaxiFare() {
+            vm.success = false;
+            vm.errorMessage = null;
 
             $http.post(fareCalculatorConfig.postBackUrl, vm.ride)
                 .then(function successCallback(response) {
-                        alert(response.data.startDateTime);
+                        vm.success = true;
+                        vm.ride = response.data;
                     },
-                    function errorCallback(response) {
-                        alert("Error");
+                    function errorCallback(msg) {
+                        vm.errorMessage = msg;
                     });
         }
     }

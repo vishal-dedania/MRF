@@ -28,11 +28,14 @@ namespace MRF.Web
                     Destination = t
                 }).ToArray();
 
-            
-            foreach (var map in maps)
+            Mapper.Initialize(cfg =>
             {
-                Mapper.Initialize(cfg => cfg.CreateMap(map.Source, map.Destination).ReverseMap());
-            }
+                foreach (var map in maps)
+                {
+                    cfg.CreateMap(map.Source, map.Destination).ReverseMap();
+                }
+            });
+
         }
     }
 }

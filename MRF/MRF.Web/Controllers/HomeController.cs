@@ -26,15 +26,11 @@ namespace MRF.Web.Controllers
         }
 
         [HttpPost]
-        public ActionResult CalculateTaxiFare(RideViewModel taxiRateViewModel)
+        public JsonResult CalculateTaxiFare(RideViewModel rideViewModel)
         {
-            //var test = _fareCalculatorService.Calculate(Mapper.Map<TaxiRateViewModel, TaxiRate>(taxiRateViewModel));
-            return null;
-        }
-
-        public ActionResult Calculate(TaxiRateViewModel taxiRateViewModel)
-        {   
-            return null;
+            var totalPrice = _fareCalculatorService.Calculate(Mapper.Map<RideViewModel, RideHistory>(rideViewModel));
+            rideViewModel.TotalPrice = totalPrice;
+            return BetterJson(rideViewModel);
         }
     }
 }

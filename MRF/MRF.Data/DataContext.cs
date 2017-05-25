@@ -11,6 +11,7 @@ namespace MRF.Data
     {
         public DbSet<State> States { get; set; }
         public DbSet<TaxiRate> TaxiRates { get; set; }
+        public DbSet<RideHistory> Rides { get; set; }
 
         public static string ConnectionStringName
         {
@@ -41,6 +42,7 @@ namespace MRF.Data
         {
             modelBuilder.Configurations.Add(new TaxiRateConfiguration());
             modelBuilder.Configurations.Add(new StateConfiguration());
+            modelBuilder.Configurations.Add(new RideHistoryConfiguration());
         }
 
         private void ApplyRules()

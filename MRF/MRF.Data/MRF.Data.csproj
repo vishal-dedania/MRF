@@ -50,6 +50,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Configuration\RideHistoryConfiguration.cs" />
     <Compile Include="Configuration\StateConfiguration.cs" />
     <Compile Include="Configuration\TaxiRateConfiguration.cs" />
     <Compile Include="DataContext.cs" />
@@ -57,10 +58,12 @@
     <Compile Include="Repositories\GenericRepository.cs" />
     <Compile Include="Repositories\IRepository.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Repositories\RideHistoryRepository.cs" />
     <Compile Include="Repositories\StateRepository.cs" />
     <Compile Include="Repositories\TaxiRateRepository.cs" />
     <Compile Include="Services\FareCalculatorService.cs" />
     <Compile Include="Services\IFareCalculatorService.cs" />
+    <Compile Include="Utilities\DataExtensions.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

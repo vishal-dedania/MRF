@@ -1,4 +1,5 @@
 ﻿using MRF.Data.Repositories;
+using MRF.Data.Utilities;
 using MRF.Models;
 
 namespace MRF.Data.Services
@@ -6,15 +7,38 @@ namespace MRF.Data.Services
     public class FareCalculatorService : IFareCalculatorService
     {
         private TaxiRateRepository _taxiRateRepository;
+        private RideHistoryRepository _rideHistoryRepository;
 
-        public FareCalculatorService(TaxiRateRepository taxiRateRepository)
+        public FareCalculatorService(TaxiRateRepository taxiRateRepository, RideHistoryRepository rideHistoryRepository)
         {
             _taxiRateRepository = taxiRateRepository;
+            _rideHistoryRepository = rideHistoryRepository;
         }
 
-        public decimal Calculate(TaxiRate taxiRate)
+        public decimal Calculate(RideHistory ride)
         {
-            return 0;
+            decimal totalPrice = 0;
+            var stateId = 2;
+            var taxiRate = _taxiRateRepository.GetTaxiRateByStateId(stateId);
+
+            var timedUnitVal = ride.NumberOfMinutesIdleOrGoingAboveSixMph / taxiRate.TimedUnitsPerMinute;
+            var distanceUnitVal = ride.TotalMilesGoingBelowSixMph / taxiRate.DistanceUnitsPerMile;
+
+            totalPrice += taxiRate.InitialEntryFee;
+            totalPrice += (timedUnitVal + distanceUnitVal) * taxiRate.UnitReate;
+            totalPrice += taxiRate.StateTaxSurcharge;
+
+            if (ride.StartDateTime.IsPeakHours())
+            {
+                totalPrice += taxiRate.PeakHoursSurcharge;
+            }
+
+            if (ride.StartDateTime.IsNightHours())
+            {
+                totalPrice += taxiRate.NightTimeSurcharge;
+            }
+
+            return totalPrice;
         }
     }
 }

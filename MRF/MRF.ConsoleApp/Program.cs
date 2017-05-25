@@ -11,7 +11,6 @@ namespace MRF.ConsoleApp
 
             DataContext context = new DataContext();
             context.Database.Initialize(true);
-
             Console.WriteLine("Done...");
             Console.ReadLine();
         }

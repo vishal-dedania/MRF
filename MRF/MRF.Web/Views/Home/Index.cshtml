@@ -5,38 +5,39 @@
 @{
     ViewBag.Title = "MRF Page";
 }
-<h1 class="page-header">MRF Calculator</h1>
+
 <form novalidate
       name="myForm"
       ng-controller="fareCalculatorController as vm"
       ng-submit="vm.calculateTaxiFare()"
       style="max-width: 580px;">
+    <h1 class="page-header">MRF Calculator</h1>
     <fieldset>
         <div class="form-group has-feedback">
             <label class="control-label" for="miles">Number of Miles when the taxicab is traveling at less than 6 miles an hour</label>
             <input required ng-model="vm.ride.totalMilesGoingBelowSixMph"
                    class="form-control" name="totalMilesGoingBelowSixMph" type="text" ng-min="1" number-validate>
-            
+
             <div class="alert alert-danger" ng-show="myForm.totalMilesGoingBelowSixMph.$error.invalidNumber">
                 <strong>Error!</strong> Invalid number.
             </div>
         </div>
-        
+
         <div class="form-group has-feedback">
             <label class="control-label" for="minutes">Number of when not in motion or traveling at 6 miles per hour or more</label>
             <input required ng-model="vm.ride.numberOfMinutesIdleOrGoingAboveSixMph"
                    class="form-control" name="numberOfMinutesIdleOrGoingAboveSixMph" type="text" number-validate>
-            
+
             <div class="alert alert-danger" ng-show="myForm.numberOfMinutesIdleOrGoingAboveSixMph.$error.invalidNumber">
                 <strong>Error!</strong> Invalid number.
             </div>
         </div>
-        
+
         <div class="form-group has-feedback">
             <label class="control-label" for="startDate">Start DateTime</label>
             <input required ng-model="vm.ride.startDateTime"
                    class="form-control" name="startDateTime" type="datetime-local">
-            
+
             <div class="alert alert-danger" ng-show="myForm.startDateTime.$error.required">
                 <strong>Error!</strong> Fare start date/time is required.
             </div>
@@ -44,7 +45,7 @@
                 <strong>Error!</strong> Not a valid date
             </div>
         </div>
-        
+
         <div class="form-group">
             <button class="btn btn-success btn-lg" ng-disabled="myForm.$invalid">Calculate</button>
         </div>
